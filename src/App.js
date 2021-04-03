@@ -1,10 +1,16 @@
 import "./App.css";
 import Diary from "./Pages/Diary";
+import { BrowserRouter } from "react-router-dom";
+import MainRouter from "./router/MainRouter";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <Diary />
+      <BrowserRouter>
+        <Navbar />
+        <MainRouter />
+      </BrowserRouter>
     </div>
   );
 }

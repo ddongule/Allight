@@ -1,27 +1,38 @@
 import React from "react";
 import styled from "styled-components";
+import { defaultPadding } from "../Styled";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <StyledNavDiv1>
       {/* Logo */}
       <StyledNavDiv2>
-        <h1>ALLIGHT</h1>
+        <Link to="/">
+          <h1>ALLIGHT</h1>
+        </Link>
       </StyledNavDiv2>
       <StyledNavDiv2>
         <StyledNavDiv3>상담받기</StyledNavDiv3>
-        <StyledNavDiv3>피드</StyledNavDiv3>
-        <StyledNavDiv3>나의 일기장</StyledNavDiv3>
-        <StyledNavDiv3>로그인</StyledNavDiv3>
-        <StyledNavDiv3>회원가입</StyledNavDiv3>
+        <StyledNavDiv3>
+          <Link to="/feed">피드</Link>
+        </StyledNavDiv3>
+
+        <StyledNavDiv3>
+          <Link to="/mydiary">나의 일기장</Link>
+        </StyledNavDiv3>
+        <StyledNavDiv3>
+          <Link to="/login">로그인</Link>
+        </StyledNavDiv3>
+        <StyledNavDiv3>
+          <Link to="/signup">회원가입</Link>
+        </StyledNavDiv3>
       </StyledNavDiv2>
     </StyledNavDiv1>
   );
 }
 
 export default Navbar;
-
-const defaultPadding = "3.5714285714285716vw";
 
 const StyledNavDiv1 = styled.div`
   display: flex;

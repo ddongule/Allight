@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { defaultPadding } from "../Styled";
 
 function Filter() {
   return (
@@ -8,13 +9,27 @@ function Filter() {
         <h1>필터</h1>
       </StyledFilterDiv2>
       <StyledFilterDiv2>
-        <StyledFilterDiv3>월</StyledFilterDiv3>
-        <StyledFilterDiv3>화</StyledFilterDiv3>
-        <StyledFilterDiv3>수</StyledFilterDiv3>
-        <StyledFilterDiv3>목</StyledFilterDiv3>
-        <StyledFilterDiv3>금</StyledFilterDiv3>
-        <StyledFilterDiv3>토</StyledFilterDiv3>
-        <StyledFilterDiv3>일</StyledFilterDiv3>
+        <StyledFilterDiv3>
+          월<input type="checkbox" />
+        </StyledFilterDiv3>
+        <StyledFilterDiv3>
+          화<input type="checkbox" />
+        </StyledFilterDiv3>
+        <StyledFilterDiv3>
+          수<input type="checkbox" />
+        </StyledFilterDiv3>
+        <StyledFilterDiv3>
+          목<input type="checkbox" />
+        </StyledFilterDiv3>
+        <StyledFilterDiv3>
+          금<input type="checkbox" />
+        </StyledFilterDiv3>
+        <StyledFilterDiv3>
+          토<input type="checkbox" />
+        </StyledFilterDiv3>
+        <StyledFilterDiv3>
+          일<input type="checkbox" />
+        </StyledFilterDiv3>
       </StyledFilterDiv2>
       <StyledFilterDiv2>
         <StyledFilterDiv4>검색</StyledFilterDiv4>
@@ -24,8 +39,6 @@ function Filter() {
 }
 
 export default Filter;
-
-const defaultPadding = "3.5714285714285716vw";
 
 const StyledFilterDiv1 = styled.div`
   display: flex;
